@@ -132,7 +132,9 @@ function scoreboard(getInningScore, inning, num){
     finalAway += away;
     console.log(`Inning ${i + 1}: Home: ${home} Away: ${away}`);
   }
+  if(num === 9){
   console.log(`Final Score: Home: ${finalHome} Away: ${finalAway}`);
+  }
 }
 
 
