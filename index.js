@@ -114,12 +114,10 @@ function scoreboard(getInningScore, inning, num){
   for(let i = 0; i < num; i++){
     home = home + getInningScore(inning, 1).Home;
     away = away + getInningScore(inning, 1).Away;
-    finalHome += home;
-    finalAway += away;
     console.log(`Inning ${i + 1}: Home: ${home} Away: ${away}`);
   }
   if(num === 9){
-  console.log(`Final Score: Home: ${finalHome} Away: ${finalAway}`);
+  console.log(`Final Score: Home: ${home} Away: ${away}`);
   }
 }
 
